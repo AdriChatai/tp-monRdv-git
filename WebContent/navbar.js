@@ -27,7 +27,7 @@ var utilisateurs = [ {
 	}
 
 	
-	this.reload(utilisateurs[2]);
+	this.reload(utilisateurs[0]);
 	
 });
 

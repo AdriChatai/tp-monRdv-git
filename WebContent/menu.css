@@ -1,21 +1,24 @@
-.container1 {
-
-  margin-left: 0px;
-  padding-left: 0px;
-
+.img{
+	opacity:0;
 }
 
-
-
+.navbar {
+	margin-bottom:0;
+	background-color:#007BFF;
+}
+.mr-auto {
+	margin-right:0;
+}
 .left{
 	width: 60px;
-	height: 85%;
-	margin-top: 3.2%;
+	height: 100%;
+	margin-top: 0;
+/*	margin-top: 3.2%;*/
 	background-color: #e3f2fd;
     white-space: nowrap;
     transition: width 0.5s ;
     position: fixed;
-		text-align: center;
+	text-align: center;
     z-index: 9999;
 }
 .left ul{
@@ -25,8 +28,8 @@
 	}
 .left li {
 		width: auto;
-		height: 60px;
-		line-height: 50px;
+		height: 80px;
+		line-height: 100px;
 		padding-left: 22px;
 	}
 .left li:hover {
@@ -42,11 +45,11 @@
 
 .left:hover {
         width: 250px;
-				text-decoration: none;
+		text-decoration: none;
     }
 
 .left .item-menu {
-	        height:50px;
+	        height:80px;
 	        overflow:hidden;
 	        color:#fff;
 	    }
