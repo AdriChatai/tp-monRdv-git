@@ -71,6 +71,9 @@ $(document).ready(function() {
 		for (let i = 1; i<specialites.length;i++){
 			$("#specialite"+i).val(utilisateur.specialites[i]);
 		}
+		while (spe>specialites.length){
+			this.removeSpe();
+		}
 		$("#mail").val(utilisateur.mail);
 		$("#tel").val(utilisateur.tel);
 		$("#duree").val(utilisateur.duree);
