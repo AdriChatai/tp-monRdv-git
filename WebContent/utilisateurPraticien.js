@@ -30,10 +30,11 @@ $(document).ready(function() {
 		
 		this.utilisateur.nom = $("#nom").val();
 		this.utilisateur.prenom = $("#prenom").val();
-		this.utilisateur.birthday = $("#birthday").val();
+//		
+		this.utilisateur.specialites = $("#birthday").val();
 		this.utilisateur.mail = $("#mail").val();
 		this.utilisateur.tel = $("#tel").val();
-		this.utilisateur.numeroCarte = $("#numeroCarte").val();
+		this.utilisateur.duree = $("#duree").val();
 		
 		self.reload();
 		
@@ -46,7 +47,7 @@ $(document).ready(function() {
 		$("#id").prop("readonly",false);
 		$("#nom").val(utilisateur.nom);
 		$("#prenom").val(utilisateur.prenom);
-		$("#birthday").val(utilisateur.birthday);
+		$("#specialite").val(utilisateur.birthday);
 		$("#mail").val(utilisateur.mail);
 		$("#tel").val(utilisateur.tel);
 		$("#numeroCarte").val(utilisateur.numeroCarte);
