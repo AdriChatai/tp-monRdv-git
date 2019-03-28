@@ -19,7 +19,7 @@ input {
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script
 	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-	<script src="utilisateurPraticien.js"></script>
+<script src="utilisateurPraticien.js"></script>
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script
@@ -72,10 +72,19 @@ input {
 								type="text" class="form-control" /><br>
 						</div> <br>
 						<div class="form-group">
-							<label for="specialites">Spécialités</label><input
-								id="specialites1" type="text" class="form-control" /><button type="button" class="btn btn-secondary">
-							<i class="fas fa-plus"></i>
-						</button><br>
+							<div id="specialites_div">
+								<label for="specialites">Spécialités</label><input
+									id="specialite0" type="text" class="form-control"/>
+							</div>
+							<div>
+								<button type="button" class="btn btn-secondary" onclick="addSpe();">
+									<i class="fas fa-plus"></i>
+								</button>
+								<button type="button" class="btn btn-secondary" onclick="removeSpe();">
+									<i class="fas fa-minus"></i>
+								</button>
+							</div>
+							<br>
 						</div> <br>
 					</td>
 					<td>
@@ -88,8 +97,8 @@ input {
 								class="form-control" /><br>
 						</div> <br>
 						<div class="form-group">
-							<label for="duree">Durée de créneau :</label><input
-								id="duree" type="text" class="form-control" /><br>
+							<label for="duree">Durée de créneau :</label><input id="duree"
+								type="text" class="form-control" /><br>
 						</div> <br>
 					</td>
 				</tr>
